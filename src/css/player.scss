@@ -1,0 +1,45 @@
+@import './variables';
+.player.info-window {
+  padding: 0.1rem;
+  color: $--content-color-dark;
+}
+
+.item-group-select {
+  margin: 0 0.2rem;
+  width: 1.2rem;
+}
+
+.scenario-group-select {
+  margin: 0 0.2rem;
+  width: 2.4rem;
+}
+
+.animation-control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0rem;
+}
+
+.title {
+  font-size: 0.14rem;
+  color: $--content-color-dark;
+  margin-left: 0.04rem;
+}
+
+.slider {
+  flex: 1;
+  margin: 0 0.2rem;
+}
+
+.action-group {
+  .el-button {
+    font-size: 0.24rem;
+    font-weight: 600;
+  }
+
+  .el-button--mini,
+  .el-radio-button--mini .el-radio-button__inner {
+    padding: 0.07rem 0;
+  }
+}

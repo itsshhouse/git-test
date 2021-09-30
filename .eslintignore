@@ -1,0 +1,4 @@
+*.js
+src/**/ApiService.ts
+.vscode/*.json
+src/typings

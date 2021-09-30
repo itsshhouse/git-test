@@ -1,0 +1,31 @@
+.app-main {
+  font-size: 0.15rem;
+
+  .el-step__icon {
+    font-size: 0.14rem;
+  }
+
+  .el-step__title {
+    font-size: 0.16rem;
+    line-height: 0.24rem;
+    &.is-finish,
+    &.is-process,
+    &.is-wait {
+      font-weight: bold !important;
+    }
+  }
+
+  .el-step__icon {
+    width: 0.24rem;
+    height: 0.24rem;
+  }
+
+  .el-step.is-horizontal .el-step__line {
+    top: 0.11rem;
+    height: 0.02rem;
+  }
+
+  .el-step__line-inner {
+    border-width: 0.01rem !important;
+  }
+}

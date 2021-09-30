@@ -1,0 +1,86 @@
+@import './variables';
+
+.app-main {
+  .el-input {
+    font-size: 0.14rem;
+  }
+
+  .el-input__inner {
+    border-radius: 0;
+  }
+
+  .el-input--mini .el-input__inner {
+    height: 0.28rem;
+    line-height: 0.28rem;
+  }
+
+  .el-input-group__prepend {
+    border-radius: 0;
+  }
+
+  .el-input__icon {
+    width: 0.25rem;
+  }
+
+  .el-input__prefix {
+    left: 0.05rem;
+  }
+
+  .el-input--prefix .el-input__inner {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+  }
+
+  .el-date-editor.el-input,
+  .el-date-editor.el-input__inner {
+    width: 2.2rem;
+  }
+
+  .el-input-number--mini {
+    width: 1.3rem;
+    line-height: 0.26rem;
+  }
+
+  .el-input-number--mini .el-input-number__increase,
+  .el-input-number--mini .el-input-number__decrease {
+    width: 0.28rem;
+  }
+
+  .el-input-number--mini .el-input__inner {
+    padding-left: 0.15rem;
+    padding-right: 0.35rem;
+  }
+
+  .el-input-number.is-controls-right[class*='mini'] [class*='increase'],
+  .el-input-number.is-controls-right[class*='mini'] [class*='decrease'] {
+    line-height: 0.13rem;
+  }
+
+  .el-input-number--mini .el-input-number__increase,
+  .el-input-number--mini .el-input-number__decrease {
+    font-size: 0.12rem;
+  }
+
+  .el-radio {
+    font-size: 0.14rem;
+    margin-right: 0.3rem;
+  }
+
+  .el-radio__inner {
+    width: 0.14rem;
+    height: 0.14rem;
+  }
+
+  .el-radio__label {
+    font-size: 0.14rem;
+    padding-left: 0.1rem;
+  }
+}
+
+.dark {
+  .info-window .el-input__inner {
+    background: $--content-bg-dark;
+    color: $--content-color-dark;
+    border: 1px solid $--content-border-dark;
+  }
+}

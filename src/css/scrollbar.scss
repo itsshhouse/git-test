@@ -1,0 +1,49 @@
+$thumb-color: rgba(243, 245, 247, 0.26);
+$scrollbar-color: #727e90;
+
+/*谷歌、safari、qq浏览器、360浏览器滚动条样式*/
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 5px;
+  height: 110px;
+  background-color: transparent;
+  margin: 0 2px;
+}
+::-webkit-scrollbar:horizontal {
+  width: 110px;
+  height: 5px;
+  margin: 2px 0;
+  background-color: transparent;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border-width: 0;
+  background: transparent;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: $thumb-color;
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+}
+/*滑块效果*/
+::-webkit-scrollbar-thumb:hover {
+  // box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: $scrollbar-color;
+}
+/*IE滚动条颜色*/
+html {
+  scrollbar-face-color: $scrollbar-color; /*滚动条颜色*/
+  scrollbar-highlight-color: #000;
+  scrollbar-3dlight-color: #000;
+  scrollbar-darkshadow-color: #000;
+  scrollbar-shadow-color: $thumb-color; /*滑块边色*/
+  scrollbar-arrow-color: rgba(0, 0, 0, 0.4); /*箭头颜色*/
+  scrollbar-track-color: #eeeeee; /*背景颜色*/
+}

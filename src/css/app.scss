@@ -1,0 +1,153 @@
+// 修改element-ui
+// http://element-cn.eleme.io/2.4/#/zh-CN/component/custom-theme
+// https://github.com/ElementUI/theme-chalk/blob/master/src/common/var.scss
+/* 改变主题色变变量 */ // $--color-primary: $color-primary;
+// $--color-text-primary: $color-text-primary;
+// $--color-text-regular: $color-text-regular;
+// $--color-text-secondary: $color-text-secondary;
+// $--tooltip-fill: $tooltip-fill;
+/* 改变 icon 字体路径变量，必须改 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+@import './custom_element_ui_var';
+@import './variables';
+@import '~element-ui/packages/theme-chalk/src/index';
+
+@import './scrollbar';
+@import './custom_el-carousel';
+@import './custom_el-input';
+@import './custom_el-select';
+@import './custom_el-step';
+@import './custom_el-form';
+@import './custom_el-table';
+@import './custom_el-tabs';
+@import './custom_el-tag';
+@import './custom_el-button.scss';
+
+%h100 {
+  height: 100%;
+}
+
+body,
+th,
+td,
+* {
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+    '微软雅黑', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  @extend %h100;
+  margin: 0;
+  padding: 0;
+  // background: $bgColor;
+}
+
+body {
+  font-size: 0.14rem;
+}
+
+// @font-face {
+//   font-family: 'digitalmedium';
+//   src: url('../assets/fonts/dg_number-webfont.woff2') format('woff2'),
+//     url('../assets/fonts/dg_number-webfont.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+[data-view].view-hidden {
+  display: none;
+}
+
+.el-message.request-loading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 15%;
+
+  .el-message__content {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 13px;
+    color: #566270;
+    font-weight: 700;
+    letter-spacing: 5px;
+  }
+}
+
+#app,
+.h100 {
+  @extend %h100;
+}
+
+#app {
+  background-size: contain;
+  overflow: hidden;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.root {
+  @extend %h100;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.app-main .icon-button {
+  padding: 0.04rem;
+}
+
+.el-popper[x-placement^='bottom'] .popper__arrow {
+  border-bottom-color: #438bff;
+}
+
+.el-popper[x-placement^='bottom'] .popper__arrow::after {
+  border-bottom-color: rgba(13, 17, 56, 0.43);
+  // border-bottom-color: #0D1138;
+}
+
+// .el-popper[x-placement^='right'] .popper__arrow::after {
+//   border-right-color: #000000;
+// }
+
+.el-popover {
+  background-color: transparent;
+  min-width: auto;
+  padding: 0;
+  border-width: 0;
+}
+
+.el-message-box {
+  background-color: #1e2d56;
+  border-color: #024372;
+
+  .el-message-box__message {
+    color: #96ccfd;
+  }
+
+  .el-button {
+    padding: 0;
+    width: 0.75rem;
+    height: 0.28rem;
+  }
+
+  .el-button--default:first-child {
+    border-color: #4ac9ff;
+    background-color: rgba(13, 12, 60, 0.45);
+    color: #4ac9ff;
+    transition: color 0.1s;
+  }
+
+  .el-button--default:first-child:hover {
+    background-color: rgba(42, 41, 121, 0.45);
+  }
+}

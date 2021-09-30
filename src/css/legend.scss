@@ -1,0 +1,47 @@
+.legend {
+  background: transparent;
+  padding: 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.12rem;
+
+  .map-legend_row {
+    border-radius: 0.1rem;
+    text-align: center;
+  }
+
+  .river span {
+    width: 0.6rem;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+
+    &:first-of-type {
+      border-top-left-radius: 0.1rem;
+      border-bottom-left-radius: 0.1rem;
+      border-left: 2px solid #fff;
+    }
+
+    &:last-of-type {
+      border-top-right-radius: 0.1rem;
+      border-bottom-right-radius: 0.1rem;
+      border-right: 2px solid #fff;
+    }
+  }
+
+  .speed {
+    width: 3rem;
+    border: 2px solid #fff;
+    span {
+      width: 0.8rem;
+    }
+  }
+}
+
+.accident .river span {
+  width: auto;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding: 0.02rem 0.1rem;
+  color: #000;
+}

@@ -1,0 +1,25 @@
+.app-main {
+  .el-cascader--mini {
+    font-size: 0.12rem;
+    line-height: 0.28rem;
+  }
+}
+
+body {
+  .el-cascader-panel {
+    font-size: 0.14rem;
+  }
+  .el-cascader-node {
+    padding: 0 0.3rem 0 0.2rem;
+    height: 0.34rem;
+    line-height: 0.34rem;
+  }
+}
+
+::v-deep {
+  .el-carousel__indicator .el-carousel__button {
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+  }
+}

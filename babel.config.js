@@ -1,5 +1,9 @@
 module.exports = {
-  presets: [
-    '@vue/cli-plugin-babel/preset',
+  presets: ['@vue/app'],
+  overrides: [
+    {
+      test: './src/api/ApiService.ts',
+      compact: false,
+    },
   ],
 };

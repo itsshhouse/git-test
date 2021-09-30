@@ -1,0 +1,29 @@
+.app-main {
+  .el-form-item__label {
+    color: #000;
+    font-size: 0.14rem;
+  }
+
+  .el-form-item__content {
+    font-size: 0.14rem;
+  }
+
+  .el-form-item--mini .el-form-item__label,
+  .el-form-item--mini .el-form-item__content {
+    line-height: 0.28rem;
+  }
+
+  .el-form-item--small .el-form-item__label,
+  .el-form-item--mini .el-form-item__content {
+    line-height: 0.32rem;
+  }
+
+  .el-form-item--mini.el-form-item,
+  .el-form-item--small.el-form-item {
+    margin-bottom: 0.18rem;
+  }
+
+  .el-form--inline .el-form-item {
+    margin-right: 0.1rem;
+  }
+}

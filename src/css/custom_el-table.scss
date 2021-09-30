@@ -1,0 +1,82 @@
+@import './variables';
+
+.app-main,
+.el-popover {
+  .el-table,
+  .el-table thead {
+    color: #000;
+    font-size: 0.14rem;
+  }
+
+  .el-table th {
+    background-color: $--table-head-bg;
+  }
+
+  .el-table th,
+  .el-table td {
+    padding: 0.08rem 0;
+  }
+
+  .el-table .cell {
+    line-height: 0.24rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .el-table--mini {
+    font-size: 0.12rem;
+  }
+
+  .el-table--mini th,
+  .el-table--mini td {
+    padding: 0.06rem 0;
+  }
+
+  .el-table--striped .el-table__body tr.el-table__row--striped td {
+    background: #f0f8ff;
+  }
+
+  .el-pagination {
+    padding: 0.02rem 0.05rem;
+    .el-pagination .btn-prev {
+      padding-right: 0.12rem;
+    }
+    .btn-next {
+      padding-left: 0.12rem;
+    }
+  }
+  .el-pagination span:not([class*='suffix']),
+  .el-pagination button {
+    font-size: 0.13rem;
+    min-width: 0.355rem;
+    height: 0.28rem;
+    line-height: 0.28rem;
+  }
+
+  .el-pagination .btn-prev,
+  .el-pagination .btn-next {
+    background-size: 0.16rem;
+  }
+
+  .el-pager li,
+  .el-pager li:last-child {
+    font-size: 0.13rem;
+    min-width: 0.355rem;
+    height: 0.28rem;
+    line-height: 0.28rem;
+    padding: 0 0.04rem;
+  }
+
+  .el-pagination__jump {
+    margin-left: 0.24rem;
+  }
+
+  .el-pagination__editor.el-input {
+    width: 0.5rem;
+  }
+
+  .el-pagination__editor.el-input .el-input__inner {
+    line-height: 0.28rem;
+    height: 0.28rem;
+  }
+}
