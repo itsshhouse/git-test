@@ -14,7 +14,7 @@ export default class MenuView extends OptionView<MenuController, Menu> {
   public $components = {};
 
   public _$mounted(vm: Vue) {
-    this.viewVm.$router.push('/menu/home');
+    vm.$router.push('/menu/home');
     this.controller.model.breadcrumb = ['home'];
   }
 
@@ -35,8 +35,8 @@ export default class MenuView extends OptionView<MenuController, Menu> {
   public handleSelect = (key: string, keyPath?: string) => {
     if (!isEmpty(key) && this.viewVm.$route.path !== key) {
       this.controller.model.activeMenu = key;
-      console.log('key :', key);
       this.viewVm.$router.push(key);
+      console.log('path :', this.viewVm.$route.path);
       this.controller.model.breadcrumb = key.replace('/menu/', '').split('/');
     }
   };

@@ -1,0 +1,12 @@
+.root {
+  .filter-tools {
+    display: flex;
+    padding-left: 0.32rem;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.16rem;
+  }
+  .table-box {
+    margin: 0.2rem;
+  }
+}

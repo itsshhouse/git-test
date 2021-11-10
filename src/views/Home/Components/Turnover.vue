@@ -121,6 +121,6 @@ export default class Order extends Vue {
   // width: 100%;
   // height: 100%;
   width: 10.38rem;
-  height: 2.67rem;
+  height: 2.47rem;
 }
 </style>

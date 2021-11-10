@@ -18,10 +18,7 @@ export default class HomeView extends OptionView<HomeController, Home> {
 
   public $components = { topContainer, deviceStatus, order, warning, turnover, turnoverTop };
 
-  public _$mounted(vm: Vue) {
-    this.controller.getData();
-    this.controller.GetApiRealTimeData();
-  }
+  public _$mounted(vm: Vue) {}
 
   public _$activated = () => {};
 

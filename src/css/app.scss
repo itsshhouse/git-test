@@ -8,20 +8,20 @@
 // $--tooltip-fill: $tooltip-fill;
 /* 改变 icon 字体路径变量，必须改 */
 $--font-path: '~element-ui/lib/theme-chalk/fonts';
-@import './custom_element_ui_var';
+// @import './custom_element_ui_var';
 @import './variables';
-@import '~element-ui/packages/theme-chalk/src/index';
+@import '~element-ui/lib/theme-chalk/index.css';
 
 @import './scrollbar';
-@import './custom_el-carousel';
-@import './custom_el-input';
-@import './custom_el-select';
-@import './custom_el-step';
-@import './custom_el-form';
-@import './custom_el-table';
-@import './custom_el-tabs';
-@import './custom_el-tag';
-@import './custom_el-button.scss';
+// @import './custom_el-carousel';
+// @import './custom_el-input';
+// @import './custom_el-select';
+// @import './custom_el-step';
+// @import './custom_el-form';
+// @import './custom_el-table';
+// @import './custom_el-tabs';
+// @import './custom_el-tag';
+// @import './custom_el-button.scss';
 
 %h100 {
   height: 100%;
@@ -95,7 +95,7 @@ body {
 }
 
 .root {
-  @extend %h100;
+  height: calc(100% - 0.4rem);
   width: 100%;
   padding: 0;
   margin: 0;
@@ -106,14 +106,14 @@ body {
   padding: 0.04rem;
 }
 
-.el-popper[x-placement^='bottom'] .popper__arrow {
-  border-bottom-color: #438bff;
-}
+// .el-popper[x-placement^='bottom'] .popper__arrow {
+//   border-bottom-color: #438bff;
+// }
 
-.el-popper[x-placement^='bottom'] .popper__arrow::after {
-  border-bottom-color: rgba(13, 17, 56, 0.43);
-  // border-bottom-color: #0D1138;
-}
+// .el-popper[x-placement^='bottom'] .popper__arrow::after {
+//   border-bottom-color: rgba(13, 17, 56, 0.43);
+//   // border-bottom-color: #0D1138;
+// }
 
 // .el-popper[x-placement^='right'] .popper__arrow::after {
 //   border-right-color: #000000;

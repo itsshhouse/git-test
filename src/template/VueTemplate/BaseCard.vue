@@ -1,7 +1,11 @@
 <template>
   <div class="base-card">
     <el-card class="box-card">
-      <div v-if="title !== ''" slot="header" class="clearfix">
+      <div
+        v-if="title !== '' && title !== undefined && title !== null"
+        slot="header"
+        class="clearfix"
+      >
         <span class="base-card-title">{{ title }}</span>
         <!-- <div v-show="showDate" class="date-controll">
           <el-date-picker
@@ -69,9 +73,9 @@ export default class BaseCard extends Vue {
   clear: both;
 }
 
-/* .box-card {
-  width: 480px;
-} */
+.box-card {
+  box-shadow: 0px 8px 13px 0px rgba(0, 20, 85, 0.09);
+}
 ::v-deep {
   .el-date-editor.el-input__inner {
     width: 2.5rem;

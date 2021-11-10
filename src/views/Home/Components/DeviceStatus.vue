@@ -27,7 +27,7 @@ import deviceStatusItem from './DeviceStatusItem.vue';
 })
 export default class TransferStatistics extends Vue {
   public infoData = [
-    { rate: 70, title: '高位视频', total: 185, offline: 90, color: '#6F78CC' },
+    { rate: 70, title: '高位视频', total: 185555555555, offline: 90, color: '#6F78CC' },
     { rate: 70, title: 'POS机', total: 185, offline: 90, color: '#426AE5' },
   ];
 }
@@ -36,29 +36,6 @@ export default class TransferStatistics extends Vue {
 .content-box {
   display: flex;
   width: 4.94rem;
-  height: 2.67rem;
-  .info-box {
-    flex: 1;
-    .chart {
-      width: 100%;
-      height: 2rem;
-    }
-    .info-detail {
-      text-align: center;
-      font-size: 0.16rem;
-      font-family: 'Source Han Sans CN';
-      font-weight: 400;
-      color: #515367;
-      line-height: 0.38rem;
-      .icon-point {
-        display: inline-block;
-        width: 0.1rem;
-        height: 0.1rem;
-        margin-right: 0.15rem;
-        border: 0;
-        border-radius: 0.05rem;
-      }
-    }
-  }
+  height: 2.37rem;
 }
 </style>

@@ -6,7 +6,8 @@ import store, { VuexCommit } from './store';
 import ECharts from 'vue-echarts';
 import 'echarts-liquidfill';
 import moment from 'moment';
-import { OracleMonitorModule, ServerMonitorModule } from './api/ApiService';
+
+require('./mock.ts');
 
 Vue.config.productionTip = false;
 Vue.component('v-chart', ECharts);

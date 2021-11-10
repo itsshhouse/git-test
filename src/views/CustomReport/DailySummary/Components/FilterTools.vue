@@ -1,0 +1,65 @@
+<template>
+  <div class="filter-tools">
+    <label>路段：</label>
+    <el-select v-model="company" placeholder="请选择路段">
+      <el-option v-for="item in companys" :key="item.value" :label="item.label" :value="item.value">
+      </el-option>
+    </el-select>
+    <label>工号：</label>
+    <el-input v-model="plateNo" placeholder="请输入员工工号" maxlength="15"> </el-input>
+    <label>姓名：</label>
+    <el-input v-model="plateNo" placeholder="请输入员工姓名" maxlength="15"> </el-input>
+    <label>日期：</label>
+    <el-date-picker
+      v-model="dateTime"
+      :type="date"
+      placeholder="选择日期"
+      :picker-options="pickerOptions"
+    >
+    </el-date-picker>
+    <el-button type="primary">查询</el-button>
+  </div>
+</template>
+<script lang="ts">
+import moment from 'moment';
+import { Vue, Component, Prop, Watch, PropSync } from 'vue-property-decorator';
+
+@Component
+export default class FilterTools extends Vue {
+  public companys: { [x: string]: any }[] = [
+    {
+      value: 'shznjt',
+      label: '上海智能交通有限公司',
+    },
+  ];
+
+  public dateTime = moment().startOf('day');
+
+  get pickerOptions() {
+    return {
+      disabledDate: (date: any) => date > moment().startOf('day'),
+    };
+  }
+
+  public inquireClick() {
+    this.$emit('inquireClick', {});
+  }
+}
+</script>
+<style lang="scss" scoped>
+.filter-tools {
+  margin-top: 0.1rem;
+  display: flex;
+  padding-left: 0.32rem;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.16rem;
+  min-width: 100%;
+  flex: 3;
+}
+::v-deep {
+  .el-input {
+    max-width: 2rem;
+  }
+}
+</style>

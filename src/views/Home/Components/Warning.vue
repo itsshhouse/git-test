@@ -2,14 +2,14 @@
   <div>
     <BaseCard title="预警信息">
       <template v-slot:card-content>
-        <div style="width: 100%;height: 2.67rem;">
+        <div style="width: 100%;height: 2.37rem;">
           <v-chart class="chart" :option="ChartOption" autoresize />
           <el-radio-group v-model="arrearsType" class="arreats-btn" @change="radioBtnChange">
             <el-radio-button label="当月欠费"></el-radio-button>
             <el-radio-button label="全部欠费"></el-radio-button>
           </el-radio-group>
           <el-table
-            height="2.2rem"
+            height="2rem"
             :data="tableData"
             class="table-box"
             :row-class-name="tableRowClassName"
@@ -23,7 +23,7 @@
             }"
             :cell-class-name="tableCellClassName"
           >
-            <el-table-column type="index" label="序号" align="center"> </el-table-column>
+            <el-table-column type="index" label="序号" align="center" width="50"> </el-table-column>
             <el-table-column prop="plate" label="车牌" align="center"> </el-table-column>
             <el-table-column prop="count" label="笔数" align="center"> </el-table-column>
             <el-table-column prop="money" label="金额" align="center"> </el-table-column>
@@ -88,7 +88,7 @@ export default class Order extends Vue {
           clockwise: false,
           startAngle: 0,
           radius: ['70%', '100%'],
-          center: ['50%', '50%'],
+          center: ['50%', '55%'],
           roseType: 'area',
           label: {
             fontSize: '16',
@@ -125,7 +125,7 @@ export default class Order extends Vue {
   // height: 100%;
   float: left;
   width: 1.8rem;
-  height: 2.67rem;
+  height: 2.47rem;
 }
 .arreats-btn {
   float: right;

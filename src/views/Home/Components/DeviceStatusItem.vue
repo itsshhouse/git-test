@@ -2,12 +2,14 @@
   <div class="info-box">
     <v-chart class="chart" :option="ChartOption" autoresize />
     <div class="info-detail">
-      <span class="icon-point" :style="{ background: color }"></span>
-      总数：{{ total }}
+      <span class="info-title"
+        ><span class="icon-point" :style="{ background: color }"></span>总数：</span
+      ><span class="info-num">{{ total }}</span>
     </div>
     <div class="info-detail">
-      <span class="icon-point" :style="{ background: color }"></span>
-      离线：{{ offline }}
+      <span class="info-title"
+        ><span class="icon-point" :style="{ background: color }"></span>离线：</span
+      ><span class="info-num">{{ offline }}</span>
     </div>
   </div>
 </template>
@@ -54,7 +56,7 @@ export default class TransferStatistics extends Vue {
         {
           type: 'gauge',
           // radius: '90%',
-          center: ['50%', '60%'],
+          center: ['50%', '50%'],
           progress: {
             show: true,
             width: 18,
@@ -105,20 +107,23 @@ export default class TransferStatistics extends Vue {
 .content-box {
   display: flex;
   width: 4.94rem;
-  height: 2.67rem;
+  height: 2.37rem;
   .info-box {
     flex: 1;
     .chart {
       width: 100%;
-      height: 2rem;
+      height: 1.8rem;
     }
     .info-detail {
-      text-align: center;
+      width: 50%;
+      margin: 0 auto;
       font-size: 0.16rem;
       font-family: 'Source Han Sans CN';
       font-weight: 400;
       color: #515367;
-      line-height: 0.38rem;
+      line-height: 0.28rem;
+      white-space: nowrap;
+
       .icon-point {
         display: inline-block;
         width: 0.1rem;
@@ -126,6 +131,14 @@ export default class TransferStatistics extends Vue {
         margin-right: 0.15rem;
         border: 0;
         border-radius: 0.05rem;
+      }
+      .info-title {
+        letter-spacing: 0.05rem;
+        text-align: right;
+      }
+      .info-num {
+        letter-spacing: 0;
+        text-align: left;
       }
     }
   }

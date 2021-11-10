@@ -1,0 +1,21 @@
+.root {
+  .el-row {
+    margin-top: 0.1rem;
+  }
+
+  .filter-tools {
+    display: flex;
+    padding-left: 0.32rem;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.16rem;
+    min-width: 100%;
+    flex: 3;
+  }
+  .order {
+    margin-left: 0.1rem;
+  }
+  .order-detail {
+    margin-right: 0.1rem;
+  }
+}
