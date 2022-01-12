@@ -177,6 +177,17 @@ const routes: RouteConfig[] = [
           },
         },
       },
+      {
+        path: '/menu/warning/bill',
+        name: 'bill',
+        props: {
+          its: {
+            module: () => import('@/views/Warning/Bill/Bill'),
+            controller: () => import('@/views/Warning/Bill/Controller'),
+            view: () => import('@/views/Warning/Bill/View'),
+          },
+        },
+      },
     ],
   },
 ];

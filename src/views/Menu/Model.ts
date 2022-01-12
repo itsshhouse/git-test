@@ -43,6 +43,7 @@ export default class MenuModel implements IModel {
       { label: '员工时间段汇总', value: 'period' },
       { label: '员工日汇总信息', value: 'dailySummary' },
     ],
+    warning: [{ label: '票据管理', value: 'bill' }],
   };
 
   public menuNameCN: any = {
@@ -65,5 +66,7 @@ export default class MenuModel implements IModel {
     roadToll: '路段收费统计',
     period: '员工时间段汇总',
     dailySummary: '员工日汇总信息',
+    warning: '预警管理',
+    bill: '票据管理',
   };
 }

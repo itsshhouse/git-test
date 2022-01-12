@@ -48,6 +48,17 @@
               >{{ item.label }}</el-menu-item
             >
           </el-submenu>
+          <el-submenu index="/menu/warning">
+            <template slot="title">
+              <span class="icon-warning">预警管理</span>
+            </template>
+            <el-menu-item
+              v-for="(item, index) in menus.warning"
+              :key="item + index"
+              :index="'/menu/warning/' + item.value"
+              >{{ item.label }}</el-menu-item
+            >
+          </el-submenu>
         </el-menu>
       </el-aside>
       <el-main class="its-main">
@@ -125,7 +136,7 @@ $imgFolder: '../../assets/images/';
     color: #000;
   }
 }
-$imgName: ('home', 'operations', 'custom-report', 'basic-report');
+$imgName: ('home', 'operations', 'custom-report', 'basic-report', 'warning');
 $imgHover: '-hover';
 $imgExtension: '@2x.png';
 
